@@ -1,1 +1,1 @@
-[Full API documentation](morsel/morsel-api/blob/master/doc/API-Docs.md)
+[Full API documentation](github.com/morsel/morsel-api/blob/master/doc/API-Docs.md)
