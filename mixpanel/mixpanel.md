@@ -44,3 +44,4 @@ This is a table of all "views" that appear in both the app and the web version s
 | ------------------ | ---------------------------- | ------------ |
 | login_screen       | Screen where user is able to log in         | 3/18/2014    |
 | your_story_edit    | View that allows users to update title, reorder morsels | 3/18/2014    |
+| claim_username | User's can claim their username with email | 4/9/2014 |
