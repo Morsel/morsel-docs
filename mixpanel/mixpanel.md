@@ -32,6 +32,7 @@ This is a table of all event names, properties and descriptions that are being t
 | Tapped Profile Picture | User taps a user's profile pic | user_action_id | 4/9/2014 |
 | Tapped Profile Name | User taps a user's profile pic | user_action_id | 4/9/2014 |
 | Tapped Comments | User taps to view morsel item's comments | morsel_id, morsel_item_id | 4/9/2014 |
+| Tapped Share Morsel | User taps to share a morsel | morsel_id, social_type, creator_id | 4/9/2014 |
 
 
 ### Super Property List
