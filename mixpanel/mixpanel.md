@@ -65,7 +65,7 @@ This is a table of all property names and descriptions that are being tracked. I
 | morsel_loaded      | Whether the morsel has its data loaded | boolean | 4/9/2014 |
 | is_last            | Whether something is the last in its list | boolean | 4/9/2014 |
 | morsels_viewed     | Number of morsels a user has viewed in a feed in current session | numeric | 4/9/2014 |
-| social_type        | Type of social media | "facebook", "twitter" | 4/9/2014 |
+| social_type        | Type of social media | "facebook", "twitter", "linkedin", "pinterest", "google_plus" | 4/9/2014 |
 | user_action_id     | Id of a user who is being acted upon | numeric | 4/9/2014 |
 | industry           | The industry a user associates with | "chef", "media", "diner" | 4/9/2014 |
 
