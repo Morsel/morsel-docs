@@ -15,6 +15,11 @@ This is a table of all event names, properties and descriptions that are being t
 | Tapped Log In      | User tapped a button to log in |   | 3/18/2014    |
 | Tapped Take a Picture      | User tapped shutter button | picture_count | 3/18/2014    |
 | Error - API  | An error was received with key="api" | error_message | 4/9/2014 |
+| Displayed Alert to User | An message was display to a user | message | 4/9/2014 |
+| Tapped Check Username Availability | User tapped to check whether their username is available | | 4/9/2014 |
+| Tapped Reserve Username | User tapped to reserve their username (after inputting their email) | | 4/9/2014 |
+| Tapped User Industry | User chose their associated industry | industry | 4/9/2014 |
+| Tapped Share Username on Social | User shared their username reservation on social | social_type | 4/9/2014 |
 | Scroll Morsel Down | A user scrolls down (sees content below) on a morsel | morsel_scroll_index, morsel_item_id, on_share, morsel_id | 4/9/2014 |
 | Scroll Morsel Up | A user scrolls up (sees previous content) on a morsel | morsel_scroll_index, morsel_item_id, on_share, morsel_id | 4/9/2014 |
 | Scroll Feed Left | A user scrolls left (sees previous content) on a feed | morsel_id, morsel_loaded, is_last, morsels_viewed | 4/9/2014 |
@@ -51,6 +56,7 @@ This is a table of all property names and descriptions that are being tracked. I
 | story_draft        | Whether a story is a draft (vs being published) | boolean | 3/18/2014    |
 | picture_count      | Number of pictures present   | numeric      | 3/18/2014    |
 | error_message      | The error passed from the API | string       | 4/9/2014    |
+| message            | The string message | string       | 4/9/2014    |
 | on_share           | The user is on the morsel share page | boolean | 4/9/2014 |
 | morsel_item_id     | The id of a morsel item | numeric | 4/9/2014 |
 | morsel_scroll_index| The index of the item (or page) in a morsel | numeric | 4/9/2014 |
@@ -60,6 +66,8 @@ This is a table of all property names and descriptions that are being tracked. I
 | morsels_viewed     | Number of morsels a user has viewed in a feed in current session | numeric | 4/9/2014 |
 | social_type        | Type of social media | "facebook", "twitter" | 4/9/2014 |
 | user_action_id     | Id of a user who is being acted upon | numeric | 4/9/2014 |
+| industry           | The industry a user associates with | "chef", "media", "diner" | 4/9/2014 |
+
 
 
 ### View List
