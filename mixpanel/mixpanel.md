@@ -14,7 +14,7 @@ This is a table of all event names, properties and descriptions that are being t
 | ------------------ | ---------------------------- | ------------ | ------------ |
 | Tapped Log In      | User tapped a button to log in |   | 3/18/2014    |
 | Tapped Take a Picture      | User tapped shutter button | picture_count | 3/18/2014    |
-| Error - API  | An error was received with key="api" | error_message | 4/9/2014 |
+| Error - API  | An error was received with key="api" | error_message, http_status | 4/9/2014 |
 | Displayed Alert to User | An message was display to a user | message | 4/9/2014 |
 | Tapped Check Username Availability | User tapped to check whether their username is available | | 4/9/2014 |
 | Tapped Reserve Username | User tapped to reserve their username (after inputting their email) | | 4/9/2014 |
@@ -40,12 +40,11 @@ This is a table of all super properties (properties that are sent with every eve
 
 | Super Property Name | Description                  | Options      | Date Started |
 | ------------------- | ---------------------------- | ------------ | ------------ |
-| view                | The "view" that an event occurred on | see full table below | 3/18/2014 |
 | client_device       | Device user is using | "iphone", "web" | 3/18/2014 |
 | client_version      | Version of client's code | "1.0.1" | 4/9/2014 |
 | $screen_width       | Width of user's screen   | numeric | 4/9/2014 |
 | $screen_height      | Height of user's screen  | numeric | 4/9/2014 |
-| user_id             | User's id (if logged in) | numeric | 4/9/2014 |
+| user_id             | User's id (if logged in) - should be set with mixpanel.identify | numeric | 4/9/2014 |
 | is_staff            | Is user a staff member   | boolean | 4/9/2014 |
 
 ### Property List
@@ -57,6 +56,7 @@ This is a table of all property names and descriptions that are being tracked. I
 | story_draft        | Whether a story is a draft (vs being published) | boolean | 3/18/2014    |
 | picture_count      | Number of pictures present   | numeric      | 3/18/2014    |
 | error_message      | The error passed from the API | string       | 4/9/2014    |
+| http_status        | The HTTP status passed along with an error | numeric | 4/22/2014 |
 | message            | The string message | string       | 4/9/2014    |
 | on_share           | The user is on the morsel share page | boolean | 4/9/2014 |
 | morsel_item_id     | The id of a morsel item | numeric | 4/9/2014 |
@@ -68,7 +68,7 @@ This is a table of all property names and descriptions that are being tracked. I
 | social_type        | Type of social media | "facebook", "twitter", "linkedin", "pinterest", "google_plus" | 4/9/2014 |
 | user_action_id     | Id of a user who is being acted upon | numeric | 4/9/2014 |
 | industry           | The industry a user associates with | "chef", "media", "diner" | 4/9/2014 |
-
+| view                | The "view" that an event occurred on | see full table below | 3/18/2014 |
 
 
 ### View List
