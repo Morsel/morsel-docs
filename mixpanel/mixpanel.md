@@ -46,6 +46,7 @@ This is a table of all super properties (properties that are sent with every eve
 | $screen_height      | Height of user's screen  | numeric | 4/9/2014 |
 | user_id             | User's id (if logged in) - should be set with mixpanel.identify | numeric | 4/9/2014 |
 | is_staff            | Is user a staff member   | boolean | 4/9/2014 |
+| is_pro              | Does user have pro account | boolean | 8/1/2014 |
 
 ### Property List
 This is a table of all property names and descriptions that are being tracked. It should be kept up to date whenever properties are added/altered
