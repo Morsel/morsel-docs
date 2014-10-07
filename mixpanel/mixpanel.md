@@ -33,7 +33,11 @@ This is a table of all event names, properties and descriptions that are being t
 | Tapped Profile Name | User taps a user's profile pic | user_action_id | 4/9/2014 |
 | Tapped Comments | User taps to view morsel item's comments | morsel_id, morsel_item_id | 4/9/2014 |
 | Tapped Share Morsel | User taps to share a morsel | morsel_id, social_type, creator_id | 4/9/2014 |
-
+| Tapped iTunes Link | User taps the link to go to iTunes | | 8/6/2014 |
+| Authenticated with Social | User authenticates with social | social_type | 10/6/2014 |
+| Signs Up | User completes a part of the signup flow | signup_step | 10/6/2014 |
+| Tapped Menu Bar Icon | When a user taps the hamburger bar | menu_state | 8/19/2014 |
+| Tapped Menu Option | When a user selects something from the main menu | menu_option | 8/15/2014 |
 
 ### Super Property List
 This is a table of all super properties (properties that are sent with every event) names and descriptions that are being tracked. It should be kept up to date whenever super properties are added/altered
@@ -70,7 +74,10 @@ This is a table of all property names and descriptions that are being tracked. I
 | user_action_id     | Id of a user who is being acted upon | numeric | 4/9/2014 |
 | industry           | The industry a user associates with | "chef", "media", "diner" | 4/9/2014 |
 | view                | The "view" that an event occurred on | see full table below | 3/18/2014 |
-
+| login_type         | How does the user log in? | "facebook", "twitter", "email" | 10/6/2014 |
+| signup_step | The step of the signup flow the user completed | "initial", "basic info" | 10/6/2014 |
+| menu_state | whether user is opening or closing menu | "opening", "closing" | 10/6/2014 |
+| menu_option | An option from the nav menu | | 10/6/2014 |
 
 ### View List
 This is a table of all "views" that appear in both the app and the web version so that we have a consistent way to refer to views across our platforms for reporting. The "property name" column is what will appear in Mixpanel under the "view" property. It should be kept up to date whenever new "views" are added/altered
