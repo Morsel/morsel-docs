@@ -32,7 +32,7 @@ This is a table of all event names, properties and descriptions that are being t
 | Tapped Profile Picture | User taps a user's profile pic | user_action_id | 4/9/2014 |
 | Tapped Profile Name | User taps a user's profile pic | user_action_id | 4/9/2014 |
 | Tapped Comments | User taps to view morsel item's comments | morsel_id, morsel_item_id | 4/9/2014 |
-| Tapped Share Morsel | User taps to share a morsel | morsel_id, social_type, creator_id | 4/9/2014 |
+| Tapped Share | User taps to share something | morsel_id, social_type, creator_id, share_type, event_name | 4/9/2014 |
 | Tapped iTunes Link | User taps the link to go to iTunes | | 8/6/2014 |
 | Authenticated with Social | User authenticates with social | social_type | 10/6/2014 |
 | Signs Up | User completes a part of the signup flow | signup_step | 10/6/2014 |
@@ -78,6 +78,8 @@ This is a table of all property names and descriptions that are being tracked. I
 | signup_step | The step of the signup flow the user completed | "initial", "basic info" | 10/6/2014 |
 | menu_state | whether user is opening or closing menu | "opening", "closing" | 10/6/2014 |
 | menu_option | An option from the nav menu | | 10/6/2014 |
+| share_subject | What type of subject was shared | "event", "morsel-detail" | 10/7/2014 |
+| event_name | The title of an event | string | 10/7/2014 |
 
 ### View List
 This is a table of all "views" that appear in both the app and the web version so that we have a consistent way to refer to views across our platforms for reporting. The "property name" column is what will appear in Mixpanel under the "view" property. It should be kept up to date whenever new "views" are added/altered
