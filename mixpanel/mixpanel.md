@@ -5,7 +5,7 @@
 - [View List](#view-list)
 
 ## Overview
-Documentation for Mixpanel
+Documentation for iOS Mixpanel events. Web events can be found [here](https://github.com/Morsel/morsel-web/tree/master/docs/mixpanel.md)
 
 ### Event List
 This is a table of all event names, properties and descriptions that are being tracked. It should be kept up to date whenever events are added/altered
